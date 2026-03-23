@@ -37,7 +37,7 @@ func main() {
 
 	http.HandleFunc("/mcp", handler.ServeHTTP)
 
-	log.Println("Starting MCP calculator server on :8080")
+	log.Println("Starting MCP server on :8080")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
 	}
